@@ -2,275 +2,235 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#08090b">
-<meta name="description" content="TOP LINE & SPORT LINE — فخر الصناعة المصرية على أرض مصرية">
-<title>TOP LINE & SPORT LINE | Official Links</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07080a">
+<meta name="description" content="TOP LINE & SPORT LINE — فخر الصناعة المصرية على أرض مصرية. اطلب مباشرة عبر واتساب.">
+<title>TOP LINE & SPORT LINE | فخر الصناعة المصرية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,600&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#08090b;--panel:#111419;--gold:#d8b36a;
-  --blue:#13aaff;--white:#f8f8f8;--muted:#a5a8ae;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  background:var(--bg);color:var(--white);
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif;
-  line-height:1.7;overflow-x:hidden
-}
+:root{--bg:#07080a;--p:#101318;--p2:#161a21;--ln:#ffffff1a;--g:#d8b36a;--g2:#f3dca4;--b:#c9ccd3;--t:#f6f6f6;--m:#9fa3ab;color-scheme:dark}
+*,*:before,*:after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--t);font-family:"Cairo","Segoe UI",Tahoma,Arial,sans-serif;line-height:1.8;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
-button,a{-webkit-tap-highlight-color:transparent}
-.wrap{width:min(100% - 30px,1000px);margin:auto}
-.topbar{
-  display:flex;align-items:center;justify-content:space-between;
-  gap:12px;padding:17px 0;border-bottom:1px solid #ffffff12
-}
-.mini-brand{font-size:12px;font-weight:800;letter-spacing:1px}
-.mini-brand span{color:var(--gold)}
-.made{font-size:11px;color:#c7c7c7}
-.hero{
-  position:relative;text-align:center;padding:35px 0 30px;
-  overflow:hidden
-}
-.hero:before{
-  content:"";position:absolute;width:280px;height:280px;
-  background:#c69d4820;filter:blur(90px);border-radius:50%;
-  top:10px;left:50%;transform:translateX(-50%);pointer-events:none
-}
-.logos{
-  display:flex;align-items:center;justify-content:center;
-  gap:18px;position:relative;margin-bottom:24px
-}
-.logo-box{
-  width:104px;height:104px;border-radius:19px;
-  display:grid;place-items:center;background:#fff;
-  border:1px solid #ffffff55;padding:9px;
-  box-shadow:0 8px 30px #0008
-}
-.logo-box.sport{background:#08090b;border-color:#ffffff80}
-.logo-box img{width:100%;height:100%;object-fit:contain}
-.logo-divider{width:1px;height:68px;background:#ffffff30}
-.eyebrow{font-size:10px;letter-spacing:3px;color:var(--gold)}
-h1{font-size:clamp(27px,6vw,47px);line-height:1.3;margin:9px 0;font-weight:900;letter-spacing:-1px}
-.amp{color:var(--gold);font-family:Georgia,serif;font-style:italic}
-.hero-copy{font-size:15px;color:#e6c989;font-weight:700}
-.hero-note{font-size:12px;color:var(--muted);margin-top:7px}
-.pills{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:21px}
-.pill{border:1px solid #ffffff20;border-radius:30px;padding:5px 12px;font-size:11px;color:#dedede}
-.pill b{color:var(--gold);margin-left:5px}
-.brand-card{
-  position:relative;display:grid;grid-template-columns:1fr 1fr;
-  min-height:235px;border-radius:20px;overflow:hidden;
-  margin:20px 0;border:1px solid #d8b36a90;
-  background:linear-gradient(125deg,#171717,#090a0c 65%);
-  box-shadow:0 12px 35px #0005
-}
-.brand-card.sport{
-  border-color:#13aaff99;
-  background:linear-gradient(125deg,#081824,#090b10 65%)
-}
-.brand-content{padding:21px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;z-index:2}
-.card-logo{width:78px;height:78px;border-radius:14px;background:#fff;padding:6px;object-fit:contain;margin-bottom:13px}
-.card-logo.dark{background:#08090b;border:1px solid #555}
-.brand-kicker{font-size:10px;letter-spacing:2px;color:var(--gold);font-weight:800}
-.sport .brand-kicker{color:#68caff}
-.brand-title{font-size:clamp(22px,4.5vw,34px);font-weight:900;line-height:1.25}
-.arabic-title{font-size:18px;font-weight:800;margin-top:3px}
-.brand-desc{font-size:12px;color:#c4c7cc;margin-top:7px;max-width:320px}
-.card-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:17px}
-.cta{
-  display:inline-flex;align-items:center;justify-content:center;gap:8px;
-  border-radius:30px;padding:10px 16px;font-size:12px;font-weight:800;
-  background:linear-gradient(110deg,#f0d49a,#c2943f);color:#16110a;
-  transition:transform .2s
-}
-.sport .cta{background:linear-gradient(110deg,#48c7ff,#087de5);color:white}
-.cta:active{transform:scale(.97)}
-.social{
-  display:flex;align-items:center;justify-content:center;
-  width:34px;height:34px;border-radius:50%;border:1px solid #ffffff45;
-  font-size:11px;font-weight:800
-}
-.sport .social{border-color:#13aaff80}
-.visual{
-  position:relative;min-height:230px;overflow:hidden;
-  background:#17191c
-}
-.visual img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}
-.visual:after{
-  content:"";position:absolute;inset:0;
-  background:linear-gradient(90deg,#101114 0%,transparent 65%)
-}
-.sport .visual:after{background:linear-gradient(90deg,#081824 0%,transparent 65%)}
-.section-head{display:flex;align-items:center;justify-content:center;gap:14px;margin:31px 0 15px}
-.section-head:before,.section-head:after{content:"";height:1px;width:35px;background:var(--gold)}
-.section-head h2{font-size:18px}
-.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-.product{
-  border:1px solid #ffffff24;border-radius:12px;overflow:hidden;
-  background:#131519;transition:transform .2s
-}
-.product:active{transform:scale(.98)}
-.product img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}
-.product p{text-align:center;font-size:11px;padding:8px 2px}
-.categories{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:15px}
-.category{border:1px solid #ffffff25;border-radius:30px;padding:6px 12px;font-size:12px;color:#ddd}
-.contact{
-  margin-top:30px;padding:22px 18px;border-radius:18px;
-  border:1px solid #ffffff20;background:linear-gradient(135deg,#15171b,#0b0c0e)
-}
-.contact-title{text-align:center;font-size:20px;margin-bottom:18px}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}
-.contact-item{font-size:12px;color:var(--muted);margin-bottom:11px}
-.contact-item strong{display:block;color:white;font-size:14px;font-weight:700;direction:ltr;text-align:right}
-.contact-item a{color:inherit}
-.whatsapp{
-  display:flex;align-items:center;justify-content:center;gap:10px;
-  background:#d7b46b;color:#14110b;border-radius:12px;padding:13px;
-  font-size:13px;font-weight:900;margin-top:15px
-}
-footer{text-align:center;padding:24px 0 32px;color:#8d9097;font-size:11px}
-.footer-name{font-size:14px;color:var(--gold);font-weight:800}
-.footer-logos{display:flex;justify-content:center;align-items:center;gap:12px;margin-bottom:13px}
-.footer-logos img{width:44px;height:44px;object-fit:contain;border-radius:8px;background:#fff;padding:3px}
-.footer-logos img:last-child{background:#08090b;border:1px solid #555}
-@media(min-width:700px){
-  .hero{padding:45px 0}
-  .brand-card{min-height:290px}
-  .brand-content{padding:30px}
-  .card-logo{width:90px;height:90px}
-  .visual{min-height:290px}
-  .gallery{grid-template-columns:repeat(6,minmax(0,1fr))}
-}
-@media(max-width:420px){
-  .wrap{width:calc(100% - 22px)}
-  .logo-box{width:88px;height:88px}
-  .logos{gap:12px}
-  .brand-card{grid-template-columns:1fr 0.78fr;min-height:210px}
-  .brand-content{padding:13px 11px}
-  .card-logo{width:60px;height:60px;margin-bottom:9px}
-  .brand-title{font-size:21px}
-  .arabic-title{font-size:16px}
-  .brand-desc{font-size:11px}
-  .card-actions{gap:6px;margin-top:12px}
-  .cta{padding:9px 11px;font-size:11px}
-  .social{width:30px;height:30px}
-  .visual{min-height:210px}
-  .contact-grid{grid-template-columns:1fr}
-}
-@media(prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *,*:before,*:after{transition:none!important}
-}
+.w{width:min(100% - 32px,1080px);margin:auto}
+.gt{background:linear-gradient(110deg,var(--g2),#c2943f);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{position:sticky;top:0;z-index:30;background:#07080ae0;backdrop-filter:blur(14px);border-bottom:1px solid var(--ln)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;letter-spacing:2px;font-size:14px}
+.lk{display:flex;gap:22px;font-size:13px;color:#d2d2d2}.lk a:hover{color:var(--g)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:40px;padding:12px 24px;font:800 13px inherit;font-family:inherit;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s;color:#16110a;background:linear-gradient(110deg,var(--g2),#c2943f)}
+.btn:hover{box-shadow:0 8px 30px #d8b36a55}.btn:active{transform:scale(.97)}
+.btn.bl{background:linear-gradient(110deg,#ffffff,#b9bcc4);color:#111}
+.btn.gh{background:transparent;border:1px solid #ffffff40;color:#fff}
+.btn.wa{background:#25d366;color:#fff}
+.hero{position:relative;text-align:center;padding:80px 0 60px;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(120px);pointer-events:none}
+.o1{width:360px;height:360px;background:#d8b36a33;top:-80px;right:-80px}
+.o2{width:320px;height:320px;background:#ffffff14;bottom:-90px;left:-70px}
+.pair{display:flex;justify-content:center;align-items:center;gap:clamp(16px,4vw,44px);margin-bottom:26px;position:relative;flex-wrap:wrap}
+.dv{width:1px;height:54px;background:linear-gradient(transparent,#ffffff55,transparent)}
+@media(max-width:560px){.dv{display:none}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.lg{width:clamp(138px,36vw,330px);height:auto;filter:drop-shadow(0 6px 22px #0009)}
+.sc{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 0 14px;-webkit-overflow-scrolling:touch}
+.ph{position:relative;flex:none;scroll-snap-align:center;border-radius:20px;overflow:hidden;border:1px solid var(--ln);background:#0c0d10}
+.ph img{display:block;height:min(470px,68vh);width:auto}
+.ph figcaption{position:absolute;inset:auto 0 0 0;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:34px 14px 14px;background:linear-gradient(transparent,#000d)}
+.ph span{font-weight:800;font-size:13px;color:var(--g2)}
+.ph button{border:0;border-radius:30px;padding:9px 16px;font:800 12px inherit;font-family:inherit;cursor:pointer;color:#16110a;background:linear-gradient(110deg,var(--g2),#c2943f)}
+.nu{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:40px;line-height:1.1;color:var(--g);margin-bottom:2px}
+.f .ic{display:flex;justify-content:center;margin-bottom:8px}.ic svg{width:34px;height:34px;stroke:var(--g);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.eb{font-size:11px;letter-spacing:5px;color:var(--g);position:relative}
+h1{font-size:clamp(36px,9vw,76px);line-height:1.15;font-weight:900;letter-spacing:-1px;margin:12px 0;position:relative}
+.tg{font-size:clamp(16px,3.6vw,23px);font-weight:800;color:#e9cd8d;position:relative}
+.sb{color:var(--m);font-size:14px;max-width:540px;margin:10px auto 0;position:relative}
+.cr{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:30px;position:relative}
+.mq{overflow:hidden;border-block:1px solid var(--ln);background:#0c0e12;padding:13px 0;direction:ltr}
+.mq div{display:flex;gap:44px;width:max-content;animation:mv 26s linear infinite;font-weight:800;font-size:13px;letter-spacing:3px;color:#c9c9c9;white-space:nowrap}
+.mq span:nth-child(odd){color:var(--g)}
+@keyframes mv{to{transform:translateX(-50%)}}
+section.s{padding:64px 0 6px}
+.hd{text-align:center;margin-bottom:28px}
+.hd small{color:var(--g);letter-spacing:4px;font-size:11px}
+.hd h2{font-size:clamp(23px,5vw,34px);font-weight:900}
+.tabs{display:flex;justify-content:center;gap:8px;margin-bottom:22px}
+.tab{padding:11px 26px;border-radius:40px;border:1px solid var(--ln);background:var(--p);color:#ddd;font:800 14px inherit;font-family:inherit;cursor:pointer;transition:.2s}
+.tab.on{background:linear-gradient(110deg,var(--g2),#c2943f);color:#16110a;border-color:transparent}
+.tab.on.sp{background:linear-gradient(110deg,#ffffff,#b9bcc4);color:#111}
+.bi{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;border:1px solid #d8b36a55;border-radius:22px;padding:22px;background:linear-gradient(135deg,#1a1712,#0b0c0f);margin-bottom:16px}
+.bi.sp{border-color:#ffffff40;background:linear-gradient(135deg,#1b1c1f,#0a0b0d)}
+.bi h3{font-size:26px;font-weight:900;line-height:1.2}.bi p{font-size:13px;color:#c4c7cc;max-width:440px}
+.bi .r{display:flex;gap:8px;flex-wrap:wrap}
+.gr{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.cd{background:var(--p);border:1px solid var(--ln);border-radius:18px;padding:22px 14px;text-align:center;cursor:pointer;transition:.25s;font-family:inherit;color:inherit}
+.cd:hover{transform:translateY(-4px);border-color:var(--g)}
+.cd b{display:block;font-size:16px;margin-top:2px}.cd span{font-size:12px;color:var(--g)}
+.ft{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.f{background:var(--p);border:1px solid var(--ln);border-radius:18px;padding:22px 14px;text-align:center}
+.f h4{font-size:15px}.f p{font-size:12px;color:var(--m)}
+.od{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start;border:1px solid #d8b36a55;border-radius:26px;padding:28px;background:linear-gradient(135deg,#17150f,#0a0b0d)}
+.od h2{font-size:clamp(22px,4.5vw,30px);font-weight:900}
+.od>div:first-child p{color:var(--m);font-size:13.5px;margin:6px 0 14px}
+.od ol{list-style:none;counter-reset:n;font-size:13px;color:#d4d4d4}
+.od li{counter-increment:n;margin-bottom:8px;display:flex;gap:10px;align-items:center}
+.od li:before{content:counter(n);display:grid;place-items:center;flex:none;width:26px;height:26px;border-radius:50%;background:var(--g);color:#16110a;font-weight:900;font-size:12px}
+form{display:grid;gap:10px}
+label{font-size:12px;color:var(--m);display:block}
+input,select,textarea{width:100%;margin-top:3px;background:#0b0d11;border:1px solid var(--ln);color:#fff;border-radius:12px;padding:11px 12px;font:14px inherit;font-family:inherit;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--g)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+details{background:var(--p);border:1px solid var(--ln);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:800;font-size:14px;list-style:none;display:flex;justify-content:space-between}
+summary:after{content:"+";color:var(--g);font-size:18px}details[open] summary:after{content:"–"}
+details p{font-size:13px;color:var(--m);margin-top:8px}
+.ct{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.nm{background:var(--p);border:1px solid var(--ln);border-radius:16px;padding:16px;text-align:center;transition:.2s}
+.nm:hover,.nm:active{border-color:var(--g);transform:translateY(-2px)}
+.nm span{display:block;font-size:12px;color:var(--m)}.nm span:before{content:"📞 "}
+.nm strong{direction:ltr;display:block;font-size:17px}
+.ad{text-align:center;color:#d4d4d4;font-size:13px;margin-top:16px}
+footer{text-align:center;padding:44px 0 44px;color:#8b8f97;font-size:12px}
+footer b{display:block;font-size:16px;color:var(--g)}
+.fw{position:fixed;bottom:18px;left:18px;z-index:40;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25d366;font-weight:900;font-size:14px;box-shadow:0 8px 26px #25d36680;animation:pl 2.4s infinite}
+@keyframes pl{0%{box-shadow:0 0 0 0 #25d36699}70%{box-shadow:0 0 0 16px #25d36600}100%{box-shadow:0 0 0 0 #25d36600}}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(max-width:760px){.lk{display:none}.od{grid-template-columns:1fr;padding:22px 18px}.ft{grid-template-columns:1fr 1fr}.ct{grid-template-columns:1fr}.hero{padding:52px 0 42px}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.fw,.mq div{animation:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<div class="wrap">
-<header class="topbar">
-  <div class="mini-brand"><span>TOP LINE</span> & SPORT LINE<br><span style="color:#aaa;font-weight:400">OFFICIAL LINKS</span></div>
-  <div class="made">صناعة مصرية 🇪🇬<br>بكل فخر</div>
+<nav><div class="w">
+  <div class="logo"><span class="gt">TOP LINE</span> & SPORT LINE</div>
+  <div class="lk"><a href="#brands">المنتجات</a><a href="#order">اطلب الآن</a><a href="#faq">أسئلة</a><a href="#contact">تواصل</a></div>
+  <a class="btn" href="#order" style="padding:9px 18px">اطلب الآن</a>
+</div></nav>
+
+<header class="hero">
+  <div class="orb o1"></div><div class="orb o2"></div>
+  <div class="w">
+    <div class="pair"><img class="lg" alt="TOP LINE FASHION" src="top-line-logo.png"><div class="dv"></div><img class="lg" alt="SPORT LINE FASHION" src="sport-line-logo.png"></div>
+    <div class="eb">PREMIUM EGYPTIAN FASHION</div>
+    <h1 class="sr">TOP LINE & SPORT LINE</h1>
+    <p class="tg">فخر الصناعة المصرية على أرض مصرية 🇪🇬</p>
+    <p class="sb">ملابس أطفال وشبابي ورجالي ورياضية بتصميمات عصرية وجودة تستحق ثقتك.</p>
+    <div class="cr"><a class="btn" href="#order">ابدأ طلبك</a><a class="btn gh" href="#brands">تصفح المنتجات</a></div>
+  </div>
 </header>
-<section class="hero">
-  <div class="logos">
-    <div class="logo-box">
-      <img src="top-line-logo.jpeg" alt="اللوجو الأصلي توب لاين">
-    </div>
-    <div class="logo-divider"></div>
-    <div class="logo-box sport">
-      <img src="sport-line-logo.jpeg" alt="اللوجو الأصلي سبورت لاين">
-    </div>
+
+<div class="mq"><div>
+  <span>MADE IN EGYPT</span><span>TOP LINE</span><span>SPORT LINE</span><span>PREMIUM QUALITY</span>
+  <span>MADE IN EGYPT</span><span>TOP LINE</span><span>SPORT LINE</span><span>PREMIUM QUALITY</span>
+  <span>MADE IN EGYPT</span><span>TOP LINE</span><span>SPORT LINE</span><span>PREMIUM QUALITY</span>
+  <span>MADE IN EGYPT</span><span>TOP LINE</span><span>SPORT LINE</span><span>PREMIUM QUALITY</span>
+</div></div>
+
+<section class="s" id="brands"><div class="w">
+  <div class="hd rv"><small>COLLECTIONS</small><h2>اختر علامتك</h2></div>
+  <div class="tabs rv">
+    <button class="tab on" data-b="top">TOP LINE</button>
+    <button class="tab sp" data-b="sport">SPORT LINE</button>
   </div>
-  <div class="eyebrow">PREMIUM EGYPTIAN FASHION</div>
-  <h1>TOP LINE <span class="amp">&</span><br>SPORT LINE</h1>
-  <p class="hero-copy">فخر الصناعة المصرية على أرض مصرية</p>
-  <p class="hero-note">علامتان تجاريتان · صناعة مصرية · جودة تستحق الثقة</p>
-  <div class="pills">
-    <span class="pill"><b>✦</b> جودة عالية</span>
-    <span class="pill"><b>✦</b> تصميمات عصرية</span>
-    <span class="pill"><b>✦</b> صناعة مصرية</span>
+  <div id="bi" class="bi rv"></div>
+  <div id="gr" class="gr"></div>
+</div></section>
+
+<section class="s" id="sport"><div class="w"><div class="hd rv"><small>SPORT LINE</small><h2>أحدث <span class="gt">الموديلات</span></h2></div></div><div class="w"><div class="sc"><figure class="ph"><img alt="SPORT LINE كود 15011" src="sport-15011.jpeg"><figcaption><span>كود 15011</span><button type="button" data-c="15011">اطلب هذا الكود</button></figcaption></figure><figure class="ph"><img alt="SPORT LINE كود 15028" src="sport-15028.jpeg"><figcaption><span>كود 15028</span><button type="button" data-c="15028">اطلب هذا الكود</button></figcaption></figure><figure class="ph"><img alt="SPORT LINE كود 15029" src="sport-15029.jpeg"><figcaption><span>كود 15029</span><button type="button" data-c="15029">اطلب هذا الكود</button></figcaption></figure></div></div></section>
+
+<section class="s"><div class="w">
+  <div class="hd rv"><small>WHY US</small><h2>ليه نحن؟</h2></div>
+  <div class="ft">
+    <div class="f rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path d="M8.5 12l2.5 2.5L16 9.5"/></svg></div><h4>صناعة مصرية</h4><p>فخر الصناعة المحلية</p></div>
+    <div class="f rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l2.2 6.2L21 12l-6.8 2.8L12 21l-2.2-6.2L3 12l6.8-2.8z"/></svg></div><h4>جودة عالية</h4><p>تفاصيل متقنة</p></div>
+    <div class="f rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M8 3L3 6l2 4 3-1v12h8V9l3 1 2-4-5-3c-.5 1.5-2 2.5-4 2.5S8.5 4.5 8 3z"/></svg></div><h4>تصميمات عصرية</h4><p>تواكب الموضة</p></div>
+    <div class="f rv"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6"/><circle cx="17" cy="9" r="2.4"/><path d="M16.5 14.2c2.7.2 4.5 2.4 4.5 5.3"/></svg></div><h4>لكل العائلة</h4><p>أطفال وشباب ورجال</p></div>
   </div>
-</section>
-<section class="brand-card">
-  <div class="brand-content">
-    <img class="card-logo" src="top-line-logo.jpeg" alt="TOP LINE">
-    <div class="brand-kicker">TOP LINE FASHION</div>
-    <h2 class="brand-title">TOP LINE</h2>
-    <div class="arabic-title">توب لاين</div>
-    <p class="brand-desc">ملابس أطفال وشبابي ورجالي بتصميمات عصرية وتفاصيل مميزة.</p>
-    <div class="card-actions">
-      <a class="cta" href="https://t.me/TOPLINEMS1986" target="_blank" rel="noopener">تصفح الكتالوج ↗</a>
-      <a class="social" href="https://www.facebook.com/share/1MfuCzEatp/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">f</a>
-      <a class="social" href="https://www.tiktok.com/@top.line299?_r=1&_t=ZS-9APLfxerLV6" target="_blank" rel="noopener" aria-label="TikTok">♪</a>
-      <a class="social" href="https://t.me/TOPLINEMS1986" target="_blank" rel="noopener" aria-label="Telegram">➤</a>
-    </div>
-  </div>
-  <div class="visual">
-    <img src="sport-15011.jpeg" alt="تشكيلة ملابس" loading="lazy">
-  </div>
-</section>
-<section class="brand-card sport">
-  <div class="brand-content">
-    <img class="card-logo dark" src="sport-line-logo.jpeg" alt="SPORT LINE">
-    <div class="brand-kicker">SPORT LINE FASHION</div>
-    <h2 class="brand-title">SPORT LINE</h2>
-    <div class="arabic-title">سبورت لاين</div>
-    <p class="brand-desc">ملابس رياضية بتصميمات مميزة تناسب أسلوب حياتك النشط.</p>
-    <div class="card-actions">
-      <a class="cta" href="https://t.me/SportLine1986" target="_blank" rel="noopener">تصفح الكتالوج ↗</a>
-      <a class="social" href="https://t.me/SportLine1986" target="_blank" rel="noopener" aria-label="Telegram">➤</a>
-      <a class="social" href="https://wa.me/201229796914" target="_blank" rel="noopener" aria-label="WhatsApp">W</a>
-    </div>
-  </div>
-  <div class="visual">
-    <img src="sport-15028.jpeg" alt="تشكيلة سبورت لاين" loading="lazy">
-  </div>
-</section>
-<section>
-  <div class="section-head"><h2>تعرّف على تشكيلاتنا</h2></div>
-  <div class="gallery">
-    <a class="product" href="https://t.me/TOPLINEMS1986" target="_blank" rel="noopener">
-      <img src="sport-15011.jpeg" alt="تشكيلة أولى" loading="lazy"><p>تشكيلاتنا</p>
-    </a>
-    <a class="product" href="https://t.me/TOPLINEMS1986" target="_blank" rel="noopener">
-      <img src="sport-15028.jpeg" alt="تشكيلة ثانية" loading="lazy"><p>TOP LINE</p>
-    </a>
-    <a class="product" href="https://t.me/SportLine1986" target="_blank" rel="noopener">
-      <img src="sport-15029.jpeg" alt="تشكيلة ثالثة" loading="lazy"><p>SPORT LINE</p>
-    </a>
-  </div>
-  <div class="categories">
-    <span class="category">أطفال</span>
-    <span class="category">أولادي</span>
-    <span class="category">محير</span>
-    <span class="category">رجالي</span>
-    <span class="category">رجالي خاص</span>
-    <span class="category">ملابس رياضية</span>
-  </div>
-</section>
-<section class="contact">
-  <h2 class="contact-title">تواصل معنا</h2>
-  <div class="contact-grid">
+</div></section>
+
+<section class="s" id="order"><div class="w">
+  <div class="od rv">
     <div>
-      <div class="contact-item">هاتف التواصل<strong><a href="tel:+201229796914">01229796914</a></strong></div>
-      <div class="contact-item">هاتف إضافي<strong><a href="tel:+201000443405">01000443405</a></strong></div>
-      <div class="contact-item">هاتف أرضي<strong><a href="tel:+20402365293">040/2365293</a></strong></div>
+      <h2>اطلب <span class="gt">بسهولة</span></h2>
+      <p>املا البيانات وهنفتحلك واتساب برسالة جاهزة، وإحنا نكمل معاك.</p>
+      <ol><li>اختار العلامة والقسم</li><li>اكتب المقاس والكمية</li><li>اضغط إرسال على واتساب</li></ol>
     </div>
-    <div>
-      <div class="contact-item">عنواننا<strong style="direction:rtl;text-align:right">المحلة الكبرى، محب</strong></div>
-      <div class="contact-item">الموقع<strong style="direction:rtl;text-align:right">امتداد مكتب العمل مع شارع المستشار</strong></div>
-    </div>
+    <form id="f" onsubmit="return false">
+      <label>الاسم<input id="n" placeholder="اسمك"></label>
+      <div class="two">
+        <label>العلامة<select id="br"><option>TOP LINE</option><option>SPORT LINE</option></select></label>
+        <label>القسم<select id="ca"></select></label>
+      </div>
+      <div class="two">
+        <label>المقاس<input id="sz" placeholder="مثال: L"></label>
+        <label>الكمية<input id="q" type="number" min="1" value="1"></label>
+      </div>
+      <label>كود الموديل (اختياري)<input id="cd" placeholder="مثال: 15011"></label>
+      <label>ملاحظات<textarea id="nt" rows="2" placeholder="اللون، الموديل، أي تفاصيل"></textarea></label>
+      <a id="go" class="btn wa" href="https://wa.me/201229796914" target="_blank" rel="noopener">إرسال الطلب على واتساب</a>
+    </form>
   </div>
-  <a class="whatsapp" href="https://wa.me/201229796914" target="_blank" rel="noopener">◉ تواصل معنا عبر واتساب</a>
-</section>
-<footer>
-  <div class="footer-logos">
-    <img src="top-line-logo.jpeg" alt="TOP LINE">
-    <img src="sport-line-logo.jpeg" alt="SPORT LINE">
+</div></section>
+
+<section class="s" id="faq"><div class="w" style="max-width:720px">
+  <div class="hd rv"><small>FAQ</small><h2>أسئلة شائعة</h2></div>
+  <details class="rv"><summary>إزاي أطلب؟</summary><p>من نموذج الطلب فوق أو مباشرة على واتساب 01229796914.</p></details>
+  <details class="rv"><summary>فين أشوف الموديلات؟</summary><p>الكتالوجات على تيليجرام: TOP LINE وSPORT LINE (الأزرار في قسم المنتجات).</p></details>
+  <details class="rv"><summary>فين مقركم؟</summary><p>المحلة الكبرى — امتداد مكتب العمل مع شارع المستشار. <a href="https://maps.app.goo.gl/eQPfYrnK6Y5i7nsv9?g_st=ic" target="_blank" rel="noopener" style="color:var(--g);font-weight:800">افتح على الخرائط ↗</a></p></details>
+</div></section>
+
+<section class="s" id="contact"><div class="w">
+  <div class="hd rv"><small>CONTACT</small><h2>تواصل معنا</h2></div>
+  <div class="ct rv">
+    <a class="nm" href="tel:+201229796914"><span>هاتف التواصل</span><strong>01229796914</strong></a>
+    <a class="nm" href="tel:+201000443405"><span>هاتف إضافي</span><strong>01000443405</strong></a>
+    <a class="nm" href="tel:+20402365293"><span>هاتف أرضي</span><strong>040/2365293</strong></a>
   </div>
-  <div class="footer-name">TOP LINE & SPORT LINE</div>
-  <p>فخر الصناعة المصرية على أرض مصرية 🇪🇬</p>
-  <p style="margin-top:8px">Official Links · المحلة الكبرى</p>
-</footer>
-</div>
+  <p class="ad">📍 المحلة الكبرى — امتداد مكتب العمل مع شارع المستشار</p>
+  <div style="text-align:center;margin-top:18px"><a class="btn" href="https://maps.app.goo.gl/eQPfYrnK6Y5i7nsv9?g_st=ic" target="_blank" rel="noopener" style="padding:14px 34px;font-size:15px">📍 افتح الموقع على الخرائط</a></div>
+</div></section>
+
+<footer><div class="w"><b>TOP LINE & SPORT LINE</b><p>فخر الصناعة المصرية على أرض مصرية 🇪🇬</p></div></footer>
+<a class="fw" href="https://wa.me/201229796914" target="_blank" rel="noopener" aria-label="واتساب">WA</a>
+
+<script>
+(function(){
+var D={
+top:{n:"TOP LINE",ar:"توب لاين",d:"ملابس أطفال وشبابي ورجالي بتصميمات عصرية وتفاصيل مميزة.",cat:"https://t.me/TOPLINEMS1986",
+ links:[["فيسبوك","https://www.facebook.com/share/1MfuCzEatp/?mibextid=wwXIfr"],["تيك توك","https://www.tiktok.com/@top.line299?_r=1&_t=ZS-9APLfxerLV6"]],
+ cats:[["","أطفال"],["","أولادي"],["","رجالي"],["","رجالي خاص"]]},
+sport:{n:"SPORT LINE",ar:"سبورت لاين",d:"ملابس رياضية بتصميمات مميزة تناسب أسلوب حياتك النشط.",cat:"https://t.me/SportLine1986",links:[],
+ cats:[["","ملابس رياضية"]]}
+};
+var bi=document.getElementById("bi"),gr=document.getElementById("gr"),br=document.getElementById("br"),ca=document.getElementById("ca");
+function opts(k){ca.innerHTML="";D[k].cats.forEach(function(c){var o=document.createElement("option");o.textContent=c[1];ca.appendChild(o)})}
+function show(k){
+ var d=D[k],sp=k==="sport";
+ document.querySelectorAll(".tab").forEach(function(t){t.classList.toggle("on",t.dataset.b===k)});
+ bi.className="bi in"+(sp?" sp":"");
+ var h='<div><h3>'+d.n+' <span style="font-size:16px;color:#cfcfcf">'+d.ar+'</span></h3><p>'+d.d+'</p></div><div class="r"><a class="btn'+(sp?' bl':'')+'" href="'+d.cat+'" target="_blank" rel="noopener">تصفح الكتالوج ↗</a>';
+ d.links.forEach(function(l){h+='<a class="btn gh" href="'+l[1]+'" target="_blank" rel="noopener">'+l[0]+'</a>'});
+ bi.innerHTML=h+'</div>';
+ gr.innerHTML="";
+ d.cats.forEach(function(c,i){var b=document.createElement("button");b.type="button";b.className="cd";b.innerHTML='<div class="nu">0'+(i+1)+'</div><b>'+c[1]+'</b><span>اطلب الآن ←</span>';
+  b.onclick=function(){br.value=d.n;opts(k);ca.value=c[1];upd();document.getElementById("order").scrollIntoView({behavior:"smooth"})};gr.appendChild(b)});
+}
+function key(){return br.value==="SPORT LINE"?"sport":"top"}
+function upd(){
+ var m="السلام عليكم، حابب أطلب:\nالعلامة: "+br.value+"\nالقسم: "+ca.value+"\nالمقاس: "+(document.getElementById("sz").value||"-")+"\nالكمية: "+(document.getElementById("q").value||1)+"\nالكود: "+(document.getElementById("cd").value||"-")+"\nالاسم: "+(document.getElementById("n").value||"-");
+ var nt=document.getElementById("nt").value;if(nt)m+="\nملاحظات: "+nt;
+ document.getElementById("go").href="https://wa.me/201229796914?text="+encodeURIComponent(m);
+}
+document.querySelectorAll(".tab").forEach(function(t){t.onclick=function(){show(t.dataset.b)}});
+br.onchange=function(){opts(key());upd()};
+["n","sz","q","nt","cd"].forEach(function(i){document.getElementById(i).oninput=upd});
+ca.onchange=upd;
+opts("top");show("top");upd();
+document.querySelectorAll(".ph button").forEach(function(b){b.onclick=function(){br.value="SPORT LINE";opts("sport");ca.value="ملابس رياضية";document.getElementById("cd").value=b.dataset.c;upd();document.getElementById("order").scrollIntoView({behavior:"smooth"})}});
+var els=document.querySelectorAll(".rv");
+if(!("IntersectionObserver" in window)){els.forEach(function(e){e.classList.add("in")});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.1});
+els.forEach(function(e){io.observe(e)});
+})();
+</script>
 </body>
 </html>
