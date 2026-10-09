@@ -32,7 +32,9 @@ nav .w{display:flex;align-items:center;justify-content:space-between;height:60px
 .dv{width:1px;height:54px;background:linear-gradient(transparent,#ffffff55,transparent)}
 @media(max-width:560px){.dv{display:none}}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-.lg{width:clamp(138px,36vw,330px);height:auto;filter:drop-shadow(0 6px 22px #0009)}
+.lg{width:clamp(138px,36vw,330px);height:auto;aspect-ratio:1320/380;object-fit:cover}
+.lt{object-position:50% 42%;mix-blend-mode:screen}
+.ls{object-position:50% 22%;filter:invert(1);mix-blend-mode:screen}
 .sc{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 0 14px;-webkit-overflow-scrolling:touch}
 .ph{position:relative;flex:none;scroll-snap-align:center;border-radius:20px;overflow:hidden;border:1px solid var(--ln);background:#0c0d10}
 .ph img{display:block;height:min(470px,68vh);width:auto}
@@ -109,7 +111,7 @@ footer b{display:block;font-size:16px;color:var(--g)}
 <header class="hero">
   <div class="orb o1"></div><div class="orb o2"></div>
   <div class="w">
-    <div class="pair"><img class="lg" alt="TOP LINE FASHION" src="top-line-logo.png"><div class="dv"></div><img class="lg" alt="SPORT LINE FASHION" src="sport-line-logo.png"></div>
+    <div class="pair"><img class="lg lt" alt="TOP LINE FASHION" src="top-line-logo.jpeg"><div class="dv"></div><img class="lg ls" alt="SPORT LINE FASHION" src="sport-line-logo.jpeg"></div>
     <div class="eb">PREMIUM EGYPTIAN FASHION</div>
     <h1 class="sr">TOP LINE & SPORT LINE</h1>
     <p class="tg">فخر الصناعة المصرية على أرض مصرية 🇪🇬</p>
