@@ -2,122 +2,275 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#101010">
-<meta name="description" content="TOP LINE & SPORT LINE - فخر الصناعة المصرية على أرض مصرية. ملابس رجالي وشبابي وأطفال من المحلة الكبرى.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#08090b">
+<meta name="description" content="TOP LINE & SPORT LINE — فخر الصناعة المصرية على أرض مصرية">
 <title>TOP LINE & SPORT LINE | Official Links</title>
 <style>
+:root{
+  --bg:#08090b;--panel:#111419;--gold:#d8b36a;
+  --blue:#13aaff;--white:#f8f8f8;--muted:#a5a8ae;
+}
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--gold:#d6b56d;--bg:#101010;--card:#191919;--text:#fff;--muted:#b9b9b9}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
-a{text-decoration:none;color:inherit}
-.page{width:100%;max-width:680px;margin:auto;padding:22px 16px 35px}
-.hero{text-align:center;padding:27px 10px 22px}
-.eyebrow{color:var(--gold);font-size:12px;letter-spacing:3px;font-weight:bold}
-h1{font-size:29px;line-height:1.35;margin:9px 0}
-.subtitle{font-size:14px;color:var(--muted)}
-.slogan{color:var(--gold);font-size:14px;margin-top:10px}
-.brand{background:linear-gradient(145deg,#222,#141414);border:1px solid #333;border-radius:20px;padding:19px;margin:18px 0;overflow:hidden}
-.brand-head{display:flex;align-items:center;gap:14px;margin-bottom:16px}
-.logo{width:94px;height:94px;object-fit:contain;background:#fff;border-radius:13px;padding:5px;flex-shrink:0}
-.brand-name{font-size:23px;font-weight:900;line-height:1.3}
-.brand-label{color:var(--gold);font-size:11px;letter-spacing:2px;direction:ltr;text-align:right}
-.brand-desc{font-size:13px;color:var(--muted);margin-top:5px}
-.links{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.btn{min-height:47px;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px 8px;border-radius:10px;background:#272727;border:1px solid #393939;font-size:13px;font-weight:700;transition:.2s}
-.btn:active{transform:scale(.98)}
-.btn.primary{background:var(--gold);color:#151515;border-color:var(--gold)}
-.btn.full{grid-column:1/-1}
-.section-title{font-size:18px;margin:25px 2px 12px}
-.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
-.product{background:#1b1b1b;border:1px solid #303030;border-radius:12px;overflow:hidden}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--white);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif;
+  line-height:1.7;overflow-x:hidden
+}
+a{color:inherit;text-decoration:none}
+button,a{-webkit-tap-highlight-color:transparent}
+.wrap{width:min(100% - 30px,1000px);margin:auto}
+.topbar{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:12px;padding:17px 0;border-bottom:1px solid #ffffff12
+}
+.mini-brand{font-size:12px;font-weight:800;letter-spacing:1px}
+.mini-brand span{color:var(--gold)}
+.made{font-size:11px;color:#c7c7c7}
+.hero{
+  position:relative;text-align:center;padding:35px 0 30px;
+  overflow:hidden
+}
+.hero:before{
+  content:"";position:absolute;width:280px;height:280px;
+  background:#c69d4820;filter:blur(90px);border-radius:50%;
+  top:10px;left:50%;transform:translateX(-50%);pointer-events:none
+}
+.logos{
+  display:flex;align-items:center;justify-content:center;
+  gap:18px;position:relative;margin-bottom:24px
+}
+.logo-box{
+  width:104px;height:104px;border-radius:19px;
+  display:grid;place-items:center;background:#fff;
+  border:1px solid #ffffff55;padding:9px;
+  box-shadow:0 8px 30px #0008
+}
+.logo-box.sport{background:#08090b;border-color:#ffffff80}
+.logo-box img{width:100%;height:100%;object-fit:contain}
+.logo-divider{width:1px;height:68px;background:#ffffff30}
+.eyebrow{font-size:10px;letter-spacing:3px;color:var(--gold)}
+h1{font-size:clamp(27px,6vw,47px);line-height:1.3;margin:9px 0;font-weight:900;letter-spacing:-1px}
+.amp{color:var(--gold);font-family:Georgia,serif;font-style:italic}
+.hero-copy{font-size:15px;color:#e6c989;font-weight:700}
+.hero-note{font-size:12px;color:var(--muted);margin-top:7px}
+.pills{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:21px}
+.pill{border:1px solid #ffffff20;border-radius:30px;padding:5px 12px;font-size:11px;color:#dedede}
+.pill b{color:var(--gold);margin-left:5px}
+.brand-card{
+  position:relative;display:grid;grid-template-columns:1fr 1fr;
+  min-height:235px;border-radius:20px;overflow:hidden;
+  margin:20px 0;border:1px solid #d8b36a90;
+  background:linear-gradient(125deg,#171717,#090a0c 65%);
+  box-shadow:0 12px 35px #0005
+}
+.brand-card.sport{
+  border-color:#13aaff99;
+  background:linear-gradient(125deg,#081824,#090b10 65%)
+}
+.brand-content{padding:21px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;z-index:2}
+.card-logo{width:78px;height:78px;border-radius:14px;background:#fff;padding:6px;object-fit:contain;margin-bottom:13px}
+.card-logo.dark{background:#08090b;border:1px solid #555}
+.brand-kicker{font-size:10px;letter-spacing:2px;color:var(--gold);font-weight:800}
+.sport .brand-kicker{color:#68caff}
+.brand-title{font-size:clamp(22px,4.5vw,34px);font-weight:900;line-height:1.25}
+.arabic-title{font-size:18px;font-weight:800;margin-top:3px}
+.brand-desc{font-size:12px;color:#c4c7cc;margin-top:7px;max-width:320px}
+.card-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:17px}
+.cta{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  border-radius:30px;padding:10px 16px;font-size:12px;font-weight:800;
+  background:linear-gradient(110deg,#f0d49a,#c2943f);color:#16110a;
+  transition:transform .2s
+}
+.sport .cta{background:linear-gradient(110deg,#48c7ff,#087de5);color:white}
+.cta:active{transform:scale(.97)}
+.social{
+  display:flex;align-items:center;justify-content:center;
+  width:34px;height:34px;border-radius:50%;border:1px solid #ffffff45;
+  font-size:11px;font-weight:800
+}
+.sport .social{border-color:#13aaff80}
+.visual{
+  position:relative;min-height:230px;overflow:hidden;
+  background:#17191c
+}
+.visual img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}
+.visual:after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,#101114 0%,transparent 65%)
+}
+.sport .visual:after{background:linear-gradient(90deg,#081824 0%,transparent 65%)}
+.section-head{display:flex;align-items:center;justify-content:center;gap:14px;margin:31px 0 15px}
+.section-head:before,.section-head:after{content:"";height:1px;width:35px;background:var(--gold)}
+.section-head h2{font-size:18px}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.product{
+  border:1px solid #ffffff24;border-radius:12px;overflow:hidden;
+  background:#131519;transition:transform .2s
+}
+.product:active{transform:scale(.98)}
 .product img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}
-.product p{text-align:center;font-size:12px;padding:8px 3px;color:#eee}
-.categories{display:flex;flex-wrap:wrap;gap:8px}
-.tag{padding:7px 12px;border:1px solid #414141;background:#1c1c1c;border-radius:20px;font-size:13px}
-.contact{margin-top:22px;padding:18px;background:#191919;border:1px solid #303030;border-radius:15px}
-.contact h2{font-size:18px;margin-bottom:9px}
-.contact p{font-size:13px;color:var(--muted);margin:6px 0}
-.contact strong{color:#fff}
-footer{text-align:center;padding:25px 5px 10px;color:#858585;font-size:11px}
-footer strong{color:var(--gold)}
-@media(max-width:360px){h1{font-size:25px}.logo{width:76px;height:76px}.brand-name{font-size:20px}.brand{padding:13px}.btn{font-size:12px}}
+.product p{text-align:center;font-size:11px;padding:8px 2px}
+.categories{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:15px}
+.category{border:1px solid #ffffff25;border-radius:30px;padding:6px 12px;font-size:12px;color:#ddd}
+.contact{
+  margin-top:30px;padding:22px 18px;border-radius:18px;
+  border:1px solid #ffffff20;background:linear-gradient(135deg,#15171b,#0b0c0e)
+}
+.contact-title{text-align:center;font-size:20px;margin-bottom:18px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+.contact-item{font-size:12px;color:var(--muted);margin-bottom:11px}
+.contact-item strong{display:block;color:white;font-size:14px;font-weight:700;direction:ltr;text-align:right}
+.contact-item a{color:inherit}
+.whatsapp{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  background:#d7b46b;color:#14110b;border-radius:12px;padding:13px;
+  font-size:13px;font-weight:900;margin-top:15px
+}
+footer{text-align:center;padding:24px 0 32px;color:#8d9097;font-size:11px}
+.footer-name{font-size:14px;color:var(--gold);font-weight:800}
+.footer-logos{display:flex;justify-content:center;align-items:center;gap:12px;margin-bottom:13px}
+.footer-logos img{width:44px;height:44px;object-fit:contain;border-radius:8px;background:#fff;padding:3px}
+.footer-logos img:last-child{background:#08090b;border:1px solid #555}
+@media(min-width:700px){
+  .hero{padding:45px 0}
+  .brand-card{min-height:290px}
+  .brand-content{padding:30px}
+  .card-logo{width:90px;height:90px}
+  .visual{min-height:290px}
+  .gallery{grid-template-columns:repeat(6,minmax(0,1fr))}
+}
+@media(max-width:420px){
+  .wrap{width:calc(100% - 22px)}
+  .logo-box{width:88px;height:88px}
+  .logos{gap:12px}
+  .brand-card{grid-template-columns:1fr 0.78fr;min-height:210px}
+  .brand-content{padding:13px 11px}
+  .card-logo{width:60px;height:60px;margin-bottom:9px}
+  .brand-title{font-size:21px}
+  .arabic-title{font-size:16px}
+  .brand-desc{font-size:11px}
+  .card-actions{gap:6px;margin-top:12px}
+  .cta{padding:9px 11px;font-size:11px}
+  .social{width:30px;height:30px}
+  .visual{min-height:210px}
+  .contact-grid{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{transition:none!important}
+}
 </style>
 </head>
 <body>
-<main class="page">
-<header class="hero">
-  <div class="eyebrow">MADE IN EGYPT</div>
-  <h1>TOP LINE <span style="color:#d6b56d">&</span><br>SPORT LINE</h1>
-  <p class="subtitle">الملابس المصرية بجودة تستحق الثقة</p>
-  <p class="slogan">فخر الصناعة المصرية على أرض مصرية</p>
+<div class="wrap">
+<header class="topbar">
+  <div class="mini-brand"><span>TOP LINE</span> & SPORT LINE<br><span style="color:#aaa;font-weight:400">OFFICIAL LINKS</span></div>
+  <div class="made">صناعة مصرية 🇪🇬<br>بكل فخر</div>
 </header>
-<section class="brand">
-  <div class="brand-head">
-    <img class="logo" src="top-line-logo.jpeg" alt="TOP LINE Logo">
-    <div>
-      <div class="brand-label">TOP LINE FASHION</div>
-      <div class="brand-name">توب لاين</div>
-      <p class="brand-desc">ملابس أطفال وشباب ورجالي</p>
+<section class="hero">
+  <div class="logos">
+    <div class="logo-box">
+      <img src="top-line-logo.jpeg" alt="اللوجو الأصلي توب لاين">
+    </div>
+    <div class="logo-divider"></div>
+    <div class="logo-box sport">
+      <img src="sport-line-logo.jpeg" alt="اللوجو الأصلي سبورت لاين">
     </div>
   </div>
-  <div class="links">
-    <a class="btn primary" href="https://t.me/TOPLINEMS1986" target="_blank" rel="noopener">قناة تليجرام</a>
-    <a class="btn" href="https://www.facebook.com/share/1MfuCzEatp/?mibextid=wwXIfr" target="_blank" rel="noopener">فيسبوك</a>
-    <a class="btn" href="https://www.tiktok.com/@top.line299?_r=1&_t=ZS-9APLfxerLV6" target="_blank" rel="noopener">تيك توك</a>
-    <a class="btn" href="https://wa.me/201229796914" target="_blank" rel="noopener">واتساب والطلبات</a>
-  </div>
-</section>
-<section class="brand">
-  <div class="brand-head">
-    <img class="logo" src="sport-line-logo.jpeg" alt="SPORT LINE Logo">
-    <div>
-      <div class="brand-label">SPORT LINE FASHION</div>
-      <div class="brand-name">سبورت لاين</div>
-      <p class="brand-desc">ملابس رياضية بتصميمات مميزة</p>
-    </div>
-  </div>
-  <div class="products">
-    <div class="product">
-      <img src="sport-15011.jpeg" alt="موديل سبورت لاين 1" loading="lazy">
-      <p>SPORT LINE</p>
-    </div>
-    <div class="product">
-      <img src="sport-15028.jpeg" alt="موديل سبورت لاين 2" loading="lazy">
-      <p>SPORT LINE</p>
-    </div>
-    <div class="product">
-      <img src="sport-15029.jpeg" alt="موديل سبورت لاين 3" loading="lazy">
-      <p>SPORT LINE</p>
-    </div>
-  </div>
-  <div class="links" style="margin-top:14px">
-    <a class="btn primary full" href="https://t.me/SportLine1986" target="_blank" rel="noopener">تصفح قناة SPORT LINE على تليجرام</a>
-    <a class="btn full" href="https://wa.me/201229796914" target="_blank" rel="noopener">تواصل للطلبات والاستفسارات</a>
+  <div class="eyebrow">PREMIUM EGYPTIAN FASHION</div>
+  <h1>TOP LINE <span class="amp">&</span><br>SPORT LINE</h1>
+  <p class="hero-copy">فخر الصناعة المصرية على أرض مصرية</p>
+  <p class="hero-note">علامتان تجاريتان · صناعة مصرية · جودة تستحق الثقة</p>
+  <div class="pills">
+    <span class="pill"><b>✦</b> جودة عالية</span>
+    <span class="pill"><b>✦</b> تصميمات عصرية</span>
+    <span class="pill"><b>✦</b> صناعة مصرية</span>
   </div>
 </section>
-<h2 class="section-title">تشكيلاتنا</h2>
-<div class="categories">
-  <span class="tag">أطفال</span>
-  <span class="tag">أولادي</span>
-  <span class="tag">محير</span>
-  <span class="tag">رجالي</span>
-  <span class="tag">رجالي خاص</span>
-  <span class="tag">ملابس رياضية</span>
-</div>
+<section class="brand-card">
+  <div class="brand-content">
+    <img class="card-logo" src="top-line-logo.jpeg" alt="TOP LINE">
+    <div class="brand-kicker">TOP LINE FASHION</div>
+    <h2 class="brand-title">TOP LINE</h2>
+    <div class="arabic-title">توب لاين</div>
+    <p class="brand-desc">ملابس أطفال وشبابي ورجالي بتصميمات عصرية وتفاصيل مميزة.</p>
+    <div class="card-actions">
+      <a class="cta" href="https://t.me/TOPLINEMS1986" target="_blank" rel="noopener">تصفح الكتالوج ↗</a>
+      <a class="social" href="https://www.facebook.com/share/1MfuCzEatp/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+      <a class="social" href="https://www.tiktok.com/@top.line299?_r=1&_t=ZS-9APLfxerLV6" target="_blank" rel="noopener" aria-label="TikTok">♪</a>
+      <a class="social" href="https://t.me/TOPLINEMS1986" target="_blank" rel="noopener" aria-label="Telegram">➤</a>
+    </div>
+  </div>
+  <div class="visual">
+    <img src="sport-15011.jpeg" alt="تشكيلة ملابس" loading="lazy">
+  </div>
+</section>
+<section class="brand-card sport">
+  <div class="brand-content">
+    <img class="card-logo dark" src="sport-line-logo.jpeg" alt="SPORT LINE">
+    <div class="brand-kicker">SPORT LINE FASHION</div>
+    <h2 class="brand-title">SPORT LINE</h2>
+    <div class="arabic-title">سبورت لاين</div>
+    <p class="brand-desc">ملابس رياضية بتصميمات مميزة تناسب أسلوب حياتك النشط.</p>
+    <div class="card-actions">
+      <a class="cta" href="https://t.me/SportLine1986" target="_blank" rel="noopener">تصفح الكتالوج ↗</a>
+      <a class="social" href="https://t.me/SportLine1986" target="_blank" rel="noopener" aria-label="Telegram">➤</a>
+      <a class="social" href="https://wa.me/201229796914" target="_blank" rel="noopener" aria-label="WhatsApp">W</a>
+    </div>
+  </div>
+  <div class="visual">
+    <img src="sport-15028.jpeg" alt="تشكيلة سبورت لاين" loading="lazy">
+  </div>
+</section>
+<section>
+  <div class="section-head"><h2>تعرّف على تشكيلاتنا</h2></div>
+  <div class="gallery">
+    <a class="product" href="https://t.me/TOPLINEMS1986" target="_blank" rel="noopener">
+      <img src="sport-15011.jpeg" alt="تشكيلة أولى" loading="lazy"><p>تشكيلاتنا</p>
+    </a>
+    <a class="product" href="https://t.me/TOPLINEMS1986" target="_blank" rel="noopener">
+      <img src="sport-15028.jpeg" alt="تشكيلة ثانية" loading="lazy"><p>TOP LINE</p>
+    </a>
+    <a class="product" href="https://t.me/SportLine1986" target="_blank" rel="noopener">
+      <img src="sport-15029.jpeg" alt="تشكيلة ثالثة" loading="lazy"><p>SPORT LINE</p>
+    </a>
+  </div>
+  <div class="categories">
+    <span class="category">أطفال</span>
+    <span class="category">أولادي</span>
+    <span class="category">محير</span>
+    <span class="category">رجالي</span>
+    <span class="category">رجالي خاص</span>
+    <span class="category">ملابس رياضية</span>
+  </div>
+</section>
 <section class="contact">
-  <h2>تواصل معنا</h2>
-  <p><strong>الهاتف:</strong> <a href="tel:+201229796914">01229796914</a></p>
-  <p><strong>الهاتف:</strong> <a href="tel:+201000443405">01000443405</a></p>
-  <p><strong>الأرضي:</strong> <a href="tel:+20402365293">040/2365293</a></p>
-  <p><strong>العنوان:</strong> المحلة الكبرى، محب، امتداد مكتب العمل مع شارع المستشار.</p>
-  <a class="btn primary full" style="margin-top:13px" href="https://wa.me/201229796914" target="_blank" rel="noopener">تواصل معنا عبر واتساب</a>
+  <h2 class="contact-title">تواصل معنا</h2>
+  <div class="contact-grid">
+    <div>
+      <div class="contact-item">هاتف التواصل<strong><a href="tel:+201229796914">01229796914</a></strong></div>
+      <div class="contact-item">هاتف إضافي<strong><a href="tel:+201000443405">01000443405</a></strong></div>
+      <div class="contact-item">هاتف أرضي<strong><a href="tel:+20402365293">040/2365293</a></strong></div>
+    </div>
+    <div>
+      <div class="contact-item">عنواننا<strong style="direction:rtl;text-align:right">المحلة الكبرى، محب</strong></div>
+      <div class="contact-item">الموقع<strong style="direction:rtl;text-align:right">امتداد مكتب العمل مع شارع المستشار</strong></div>
+    </div>
+  </div>
+  <a class="whatsapp" href="https://wa.me/201229796914" target="_blank" rel="noopener">◉ تواصل معنا عبر واتساب</a>
 </section>
 <footer>
-  <strong>TOP LINE & SPORT LINE</strong>
-  <p>صناعة مصرية بكل فخر 🇪🇬</p>
-  <p>Official Links</p>
+  <div class="footer-logos">
+    <img src="top-line-logo.jpeg" alt="TOP LINE">
+    <img src="sport-line-logo.jpeg" alt="SPORT LINE">
+  </div>
+  <div class="footer-name">TOP LINE & SPORT LINE</div>
+  <p>فخر الصناعة المصرية على أرض مصرية 🇪🇬</p>
+  <p style="margin-top:8px">Official Links · المحلة الكبرى</p>
 </footer>
-</main>
+</div>
 </body>
 </html>
