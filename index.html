@@ -1,276 +1,206 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#08090b">
-<meta name="description" content="TOP LINE & SPORT LINE — فخر الصناعة المصرية على أرض مصرية">
-<title>TOP LINE & SPORT LINE | Official Links</title>
-<style>
-:root{
-  --bg:#08090b;--panel:#111419;--gold:#d8b36a;
-  --blue:#13aaff;--white:#f8f8f8;--muted:#a5a8ae;
+/* Premium black redesign */
+:root {
+–bg: #050607;
+–panel: #0c0f12;
+–gold: #d8b36a;
+–blue: #39bfff;
+–white: #f7f7f5;
+–muted: #9ca3ad;
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  background:var(--bg);color:var(--white);
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif;
-  line-height:1.7;overflow-x:hidden
+
+body {
+background: radial-gradient(ellipse at top, #17191c 0%, #08090b 45%, #050607 100%);
 }
-a{color:inherit;text-decoration:none}
-button,a{-webkit-tap-highlight-color:transparent}
-.wrap{width:min(100% - 30px,1000px);margin:auto}
-.topbar{
-  display:flex;align-items:center;justify-content:space-between;
-  gap:12px;padding:17px 0;border-bottom:1px solid #ffffff12
+
+.wrap {
+width: min(100% - 28px, 1040px);
 }
-.mini-brand{font-size:12px;font-weight:800;letter-spacing:1px}
-.mini-brand span{color:var(--gold)}
-.made{font-size:11px;color:#c7c7c7}
-.hero{
-  position:relative;text-align:center;padding:35px 0 30px;
-  overflow:hidden
+
+.topbar {
+border-bottom: 1px solid #ffffff18;
+padding: 20px 0;
 }
-.hero:before{
-  content:"";position:absolute;width:280px;height:280px;
-  background:#c69d4820;filter:blur(90px);border-radius:50%;
-  top:10px;left:50%;transform:translateX(-50%);pointer-events:none
+
+.hero {
+padding: 42px 0 30px;
 }
-.logos{
-  display:flex;align-items:center;justify-content:center;
-  gap:18px;position:relative;margin-bottom:24px
+
+.hero:before {
+background: #d8b36a10;
 }
-.logo-box{
-  width:104px;height:104px;border-radius:19px;
-  display:grid;place-items:center;background:#fff;
-  border:1px solid #ffffff55;padding:9px;
-  box-shadow:0 8px 30px #0008
+
+h1 {
+font-size: clamp(32px, 7vw, 56px);
+letter-spacing: 1px;
+margin: 14px 0;
 }
-.logo-box.sport{background:#08090b;border-color:#ffffff80}
-.logo-box img{width:100%;height:100%;object-fit:contain}
-.logo-divider{width:1px;height:68px;background:#ffffff30}
-.eyebrow{font-size:10px;letter-spacing:3px;color:var(--gold)}
-h1{font-size:clamp(27px,6vw,47px);line-height:1.3;margin:9px 0;font-weight:900;letter-spacing:-1px}
-.amp{color:var(--gold);font-family:Georgia,serif;font-style:italic}
-.hero-copy{font-size:15px;color:#e6c989;font-weight:700}
-.hero-note{font-size:12px;color:var(--muted);margin-top:7px}
-.pills{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:21px}
-.pill{border:1px solid #ffffff20;border-radius:30px;padding:5px 12px;font-size:11px;color:#dedede}
-.pill b{color:var(--gold);margin-left:5px}
-.brand-card{
-  position:relative;display:grid;grid-template-columns:1fr 1fr;
-  min-height:235px;border-radius:20px;overflow:hidden;
-  margin:20px 0;border:1px solid #d8b36a90;
-  background:linear-gradient(125deg,#171717,#090a0c 65%);
-  box-shadow:0 12px 35px #0005
+
+.hero-copy {
+color: #e8d5ac;
 }
-.brand-card.sport{
-  border-color:#13aaff99;
-  background:linear-gradient(125deg,#081824,#090b10 65%)
+
+.pill {
+border-color: #ffffff18;
+background: #ffffff04;
 }
-.brand-content{padding:21px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;z-index:2}
-.card-logo{width:78px;height:78px;border-radius:14px;background:#fff;padding:6px;object-fit:contain;margin-bottom:13px}
-.card-logo.dark{background:#08090b;border:1px solid #555}
-.brand-kicker{font-size:10px;letter-spacing:2px;color:var(--gold);font-weight:800}
-.sport .brand-kicker{color:#68caff}
-.brand-title{font-size:clamp(22px,4.5vw,34px);font-weight:900;line-height:1.25}
-.arabic-title{font-size:18px;font-weight:800;margin-top:3px}
-.brand-desc{font-size:12px;color:#c4c7cc;margin-top:7px;max-width:320px}
-.card-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:17px}
-.cta{
-  display:inline-flex;align-items:center;justify-content:center;gap:8px;
-  border-radius:30px;padding:10px 16px;font-size:12px;font-weight:800;
-  background:linear-gradient(110deg,#f0d49a,#c2943f);color:#16110a;
-  transition:transform .2s
+
+/* Brand logos: no boxes, borders or backgrounds */
+.card-logo,
+.card-logo.dark {
+width: 96px;
+height: 72px;
+object-fit: contain;
+display: block;
+margin: 0 0 18px;
+padding: 0;
+border: 0;
+border-radius: 0;
+background: transparent;
+box-shadow: none;
 }
-.sport .cta{background:linear-gradient(110deg,#48c7ff,#087de5);color:white}
-.cta:active{transform:scale(.97)}
-.social{
-  display:flex;align-items:center;justify-content:center;
-  width:34px;height:34px;border-radius:50%;border:1px solid #ffffff45;
-  font-size:11px;font-weight:800
+
+.brand-card {
+grid-template-columns: 1fr 1fr;
+min-height: 280px;
+border: 0;
+border-top: 1px solid #d8b36a70;
+border-bottom: 1px solid #ffffff16;
+border-radius: 0;
+margin: 30px 0;
+background: linear-gradient(110deg, #111214, #070809 78%);
+box-shadow: none;
 }
-.sport .social{border-color:#13aaff80}
-.visual{
-  position:relative;min-height:230px;overflow:hidden;
-  background:#17191c
+
+.brand-card.sport {
+border-top-color: #39bfff80;
+background: linear-gradient(110deg, #09131b, #07090b 78%);
 }
-.visual img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}
-.visual:after{
-  content:"";position:absolute;inset:0;
-  background:linear-gradient(90deg,#101114 0%,transparent 65%)
+
+.brand-content {
+padding: 30px;
 }
-.sport .visual:after{background:linear-gradient(90deg,#081824 0%,transparent 65%)}
-.section-head{display:flex;align-items:center;justify-content:center;gap:14px;margin:31px 0 15px}
-.section-head:before,.section-head:after{content:"";height:1px;width:35px;background:var(--gold)}
-.section-head h2{font-size:18px}
-.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-.product{
-  border:1px solid #ffffff24;border-radius:12px;overflow:hidden;
-  background:#131519;transition:transform .2s
+
+.brand-title {
+font-size: clamp(26px, 4vw, 38px);
+margin-top: 5px;
 }
-.product:active{transform:scale(.98)}
-.product img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}
-.product p{text-align:center;font-size:11px;padding:8px 2px}
-.categories{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:15px}
-.category{border:1px solid #ffffff25;border-radius:30px;padding:6px 12px;font-size:12px;color:#ddd}
-.contact{
-  margin-top:30px;padding:22px 18px;border-radius:18px;
-  border:1px solid #ffffff20;background:linear-gradient(135deg,#15171b,#0b0c0e)
+
+.brand-desc {
+font-size: 13px;
+line-height: 1.9;
+color: #b7bbc2;
 }
-.contact-title{text-align:center;font-size:20px;margin-bottom:18px}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}
-.contact-item{font-size:12px;color:var(--muted);margin-bottom:11px}
-.contact-item strong{display:block;color:white;font-size:14px;font-weight:700;direction:ltr;text-align:right}
-.contact-item a{color:inherit}
-.whatsapp{
-  display:flex;align-items:center;justify-content:center;gap:10px;
-  background:#d7b46b;color:#14110b;border-radius:12px;padding:13px;
-  font-size:13px;font-weight:900;margin-top:15px
+
+.card-actions {
+gap: 9px;
+margin-top: 20px;
 }
-footer{text-align:center;padding:24px 0 32px;color:#8d9097;font-size:11px}
-.footer-name{font-size:14px;color:var(--gold);font-weight:800}
-.footer-logos{display:flex;justify-content:center;align-items:center;gap:12px;margin-bottom:13px}
-.footer-logos img{width:44px;height:44px;object-fit:contain;border-radius:8px;background:#fff;padding:3px}
-.footer-logos img:last-child{background:#08090b;border:1px solid #555}
-@media(min-width:700px){
-  .hero{padding:45px 0}
-  .brand-card{min-height:290px}
-  .brand-content{padding:30px}
-  .card-logo{width:90px;height:90px}
-  .visual{min-height:290px}
-  .gallery{grid-template-columns:repeat(6,minmax(0,1fr))}
+
+.cta {
+min-height: 42px;
+padding: 11px 18px;
+border-radius: 7px;
+font-size: 12px;
 }
-@media(max-width:420px){
-  .wrap{width:calc(100% - 22px)}
-  .logo-box{width:88px;height:88px}
-  .logos{gap:12px}
-  .brand-card{grid-template-columns:1fr 0.78fr;min-height:210px}
-  .brand-content{padding:13px 11px}
-  .card-logo{width:60px;height:60px;margin-bottom:9px}
-  .brand-title{font-size:21px}
-  .arabic-title{font-size:16px}
-  .brand-desc{font-size:11px}
-  .card-actions{gap:6px;margin-top:12px}
-  .cta{padding:9px 11px;font-size:11px}
-  .social{width:30px;height:30px}
-  .visual{min-height:210px}
-  .contact-grid{grid-template-columns:1fr}
+
+.sport .cta {
+background: #159fe7;
 }
-@media(prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *,*:before,*:after{transition:none!important}
+
+.social {
+width: 36px;
+height: 36px;
+border-radius: 8px;
+border-color: #ffffff35;
 }
-</style>
-</head>
-<body>
-<div class="wrap">
-<header class="topbar">
-  <div class="mini-brand"><span>TOP LINE</span> & SPORT LINE<br><span style="color:#aaa;font-weight:400">OFFICIAL LINKS</span></div>
-  <div class="made">صناعة مصرية 🇪🇬<br>بكل فخر</div>
-</header>
-<section class="hero">
-  <div class="logos">
-    <div class="logo-box">
-      <img src="top-line-logo.jpeg" alt="اللوجو الأصلي توب لاين">
-    </div>
-    <div class="logo-divider"></div>
-    <div class="logo-box sport">
-      <img src="sport-line-logo.jpeg" alt="اللوجو الأصلي سبورت لاين">
-    </div>
-  </div>
-  <div class="eyebrow">PREMIUM EGYPTIAN FASHION</div>
-  <h1>TOP LINE <span class="amp">&</span><br>SPORT LINE</h1>
-  <p class="hero-copy">فخر الصناعة المصرية على أرض مصرية</p>
-  <p class="hero-note">علامتان تجاريتان · صناعة مصرية · جودة تستحق الثقة</p>
-  <div class="pills">
-    <span class="pill"><b>✦</b> جودة عالية</span>
-    <span class="pill"><b>✦</b> تصميمات عصرية</span>
-    <span class="pill"><b>✦</b> صناعة مصرية</span>
-  </div>
-</section>
-<section class="brand-card">
-  <div class="brand-content">
-    <img class="card-logo" src="top-line-logo.jpeg" alt="TOP LINE">
-    <div class="brand-kicker">TOP LINE FASHION</div>
-    <h2 class="brand-title">TOP LINE</h2>
-    <div class="arabic-title">توب لاين</div>
-    <p class="brand-desc">ملابس أطفال وشبابي ورجالي بتصميمات عصرية وتفاصيل مميزة.</p>
-    <div class="card-actions">
-      <a class="cta" href="https://t.me/TOPLINEMS1986" target="_blank" rel="noopener">تصفح الكتالوج ↗</a>
-      <a class="social" href="https://www.facebook.com/share/1MfuCzEatp/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">f</a>
-      <a class="social" href="https://www.tiktok.com/@top.line299?_r=1&_t=ZS-9APLfxerLV6" target="_blank" rel="noopener" aria-label="TikTok">♪</a>
-      <a class="social" href="https://t.me/TOPLINEMS1986" target="_blank" rel="noopener" aria-label="Telegram">➤</a>
-    </div>
-  </div>
-  <div class="visual">
-    <img src="sport-15011.jpeg" alt="تشكيلة ملابس" loading="lazy">
-  </div>
-</section>
-<section class="brand-card sport">
-  <div class="brand-content">
-    <img class="card-logo dark" src="sport-line-logo.jpeg" alt="SPORT LINE">
-    <div class="brand-kicker">SPORT LINE FASHION</div>
-    <h2 class="brand-title">SPORT LINE</h2>
-    <div class="arabic-title">سبورت لاين</div>
-    <p class="brand-desc">ملابس رياضية بتصميمات مميزة تناسب أسلوب حياتك النشط.</p>
-    <div class="card-actions">
-      <a class="cta" href="https://t.me/SportLine1986" target="_blank" rel="noopener">تصفح الكتالوج ↗</a>
-      <a class="social" href="https://t.me/SportLine1986" target="_blank" rel="noopener" aria-label="Telegram">➤</a>
-      <a class="social" href="https://wa.me/201229796914" target="_blank" rel="noopener" aria-label="WhatsApp">W</a>
-    </div>
-  </div>
-  <div class="visual">
-    <img src="sport-15028.jpeg" alt="تشكيلة سبورت لاين" loading="lazy">
-  </div>
-</section>
-<section>
-  <div class="section-head"><h2>تعرّف على تشكيلاتنا</h2></div>
-  <div class="gallery">
-    <a class="product" href="https://t.me/TOPLINEMS1986" target="_blank" rel="noopener">
-      <img src="sport-15011.jpeg" alt="تشكيلة أولى" loading="lazy"><p>تشكيلاتنا</p>
-    </a>
-    <a class="product" href="https://t.me/TOPLINEMS1986" target="_blank" rel="noopener">
-      <img src="sport-15028.jpeg" alt="تشكيلة ثانية" loading="lazy"><p>TOP LINE</p>
-    </a>
-    <a class="product" href="https://t.me/SportLine1986" target="_blank" rel="noopener">
-      <img src="sport-15029.jpeg" alt="تشكيلة ثالثة" loading="lazy"><p>SPORT LINE</p>
-    </a>
-  </div>
-  <div class="categories">
-    <span class="category">أطفال</span>
-    <span class="category">أولادي</span>
-    <span class="category">محير</span>
-    <span class="category">رجالي</span>
-    <span class="category">رجالي خاص</span>
-    <span class="category">ملابس رياضية</span>
-  </div>
-</section>
-<section class="contact">
-  <h2 class="contact-title">تواصل معنا</h2>
-  <div class="contact-grid">
-    <div>
-      <div class="contact-item">هاتف التواصل<strong><a href="tel:+201229796914">01229796914</a></strong></div>
-      <div class="contact-item">هاتف إضافي<strong><a href="tel:+201000443405">01000443405</a></strong></div>
-      <div class="contact-item">هاتف أرضي<strong><a href="tel:+20402365293">040/2365293</a></strong></div>
-    </div>
-    <div>
-      <div class="contact-item">عنواننا<strong style="direction:rtl;text-align:right">المحلة الكبرى، محب</strong></div>
-      <div class="contact-item">الموقع<strong style="direction:rtl;text-align:right">امتداد مكتب العمل مع شارع المستشار</strong></div>
-    </div>
-  </div>
-  <a class="whatsapp" href="https://wa.me/201229796914" target="_blank" rel="noopener">◉ تواصل معنا عبر واتساب</a>
-</section>
-<footer>
-  <div class="footer-logos">
-    <img src="top-line-logo.jpeg" alt="TOP LINE">
-    <img src="sport-line-logo.jpeg" alt="SPORT LINE">
-  </div>
-  <div class="footer-name">TOP LINE & SPORT LINE</div>
-  <p>فخر الصناعة المصرية على أرض مصرية 🇪🇬</p>
-  <p style="margin-top:8px">Official Links · المحلة الكبرى</p>
-</footer>
-</div>
-</body>
-</html>
+
+.visual {
+min-height: 280px;
+background: #101216;
+}
+
+.visual:after {
+background: linear-gradient(90deg, #0b0c0e 0%, #0b0c0e35 35%, transparent 100%);
+}
+
+.sport .visual:after {
+background: linear-gradient(90deg, #081018 0%, #08101835 35%, transparent 100%);
+}
+
+.section-head {
+margin: 42px 0 18px;
+}
+
+.section-head:before,
+.section-head:after {
+background: #d8b36a70;
+}
+
+.product {
+border: 1px solid #ffffff15;
+border-radius: 8px;
+background: #0d0f12;
+}
+
+.category {
+border-color: #ffffff1f;
+background: #ffffff04;
+}
+
+.contact {
+border: 1px solid #ffffff18;
+border-radius: 12px;
+background: #0b0d10;
+padding: 26px 22px;
+}
+
+.whatsapp {
+border-radius: 8px;
+background: #d8b36a;
+}
+
+footer {
+padding: 28px 0 36px;
+}
+
+@media (max-width: 600px) {
+.hero {
+padding: 34px 0 25px;
+}
+
+.brand-card {
+grid-template-columns: 1fr;
+min-height: 0;
+margin: 25px 0;
+}
+
+.brand-content {
+padding: 24px 18px;
+}
+
+.card-logo,
+.card-logo.dark {
+width: 84px;
+height: 64px;
+margin-bottom: 14px;
+}
+
+.visual {
+min-height: 230px;
+grid-row: 1;
+}
+
+.visual:after,
+.sport .visual:after {
+background: linear-gradient(0deg, #08090b 0%, transparent 75%);
+}
+
+.gallery {
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 8px;
+}
+
+.contact-grid {
+grid-template-columns: 1fr;
+}
+}
